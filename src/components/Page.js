@@ -33,7 +33,7 @@ const Weather = () => {
         units: unit,
       };
 
-      const response = await axios.post('http://localhost:5000/api/location', jsonData);
+      const response = await axios.post('https://weatherappbackend-is2k.onrender.com/api/location', jsonData);
       const data = response.data;
       data.city = city;
       setWeather(data);
